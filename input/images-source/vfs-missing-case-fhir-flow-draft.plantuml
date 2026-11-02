@@ -1,0 +1,29 @@
+@startuml
+title 脆家 -> 育兒津貼：行方不明案件／撤尋（FHIR 設計草稿）
+hide footbox
+participant "脆家平台" as VFS
+participant "脆家 FHIR Server" as VFSServer
+participant "育兒津貼系統" as Baby
+
+VFS -> VFSServer: 建立 EpisodeOfCare\n（行方不明案件）
+note right of VFSServer
+identifier：行方不明案件編號
+status：active
+period.start：通報時間
+patient：個案
+end note
+VFSServer -> Baby: Bundle / FHIR API\nPatient + EpisodeOfCare
+Baby -> Baby: 依有效行方不明案件\n執行育兒津貼處理
+Baby --> VFSServer: 技術接收結果
+
+== 撤尋 ==
+VFS -> VFSServer: 更新同一 EpisodeOfCare
+note right of VFSServer
+identifier：同一案件編號
+status：finished
+period.end：撤尋時間
+end note
+VFSServer -> Baby: Bundle / FHIR API\nEpisodeOfCare 狀態更新
+Baby -> Baby: 依撤尋規則處理後續補助
+Baby --> VFSServer: 技術接收結果
+@enduml

@@ -1,0 +1,30 @@
+@startuml
+scale max 650 width
+top to bottom direction
+skinparam shadowing false
+skinparam packageStyle rectangle
+skinparam nodesep 25
+skinparam ranksep 30
+skinparam usecase {
+  BackgroundColor white
+  BorderColor #6f7d89
+  ArrowColor gray
+}
+rectangle "脆弱家庭\n個案管理平台" as VFS_CRA #d1ebf1 {
+  usecase "傳送行方不明\n個案資訊(含撤尋)" as SendMissing
+  usecase "接收育兒津貼\n申請資料" as ReceiveApplication
+}
+
+rectangle "未滿2歲兒童\n育兒津貼資訊系統" as CRA #d5e8d4 {
+  usecase "接收行方不明\n個案資訊(含撤尋)" as ReceiveMissing
+  usecase "查調並停止或\n重新發放育兒津貼" as UpdateAllowance
+  usecase "回饋育兒津貼\n申請資料" as ReturnApplication
+}
+
+VFS_CRA -[hidden]down- CRA
+SendMissing -down-> ReceiveMissing
+ReceiveMissing -right-> UpdateAllowance
+UpdateAllowance -right-> ReturnApplication
+ReturnApplication -up-> ReceiveApplication
+SendMissing -[hidden]right- ReceiveApplication
+@enduml

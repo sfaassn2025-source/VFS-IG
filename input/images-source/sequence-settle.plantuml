@@ -1,0 +1,22 @@
+@startuml
+autonumber
+
+skinparam sequence {
+  ArrowColor gray
+  ActorBorderColor gray
+  LifeLineBorderColor black
+}
+skinparam shadowing false
+hide footbox
+
+participant "脆弱家庭\n個案管理平台" as VFS #d1ebf1
+participant "全國兒童少年安置及\n追蹤個案管理系統" as SETTLE #D5E8D4
+
+VFS -> SETTLE: 傳送主責社工人員之自然人憑證卡號及該個案資料
+alt 傳送成功
+  SETTLE --> VFS: 取得傳送成功訊息
+else 傳送失敗
+  SETTLE --> VFS: 取得傳送失敗訊息
+end
+
+@enduml

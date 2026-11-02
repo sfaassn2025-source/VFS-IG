@@ -1,0 +1,19 @@
+@startuml
+title 育兒津貼 -> 脆家：協尋所需聯絡資料回饋（FHIR 設計草稿）
+hide footbox
+participant "育兒津貼系統" as Baby
+participant "育兒津貼 FHIR Server" as BabyServer
+participant "脆家平台" as VFS
+
+VFS -> BabyServer: 依個案身分識別碼查詢
+BabyServer -> Baby: 比對行方不明個案及其兄弟姐妹\n是否已有育兒津貼申請資料
+Baby --> BabyServer: 可提供的聯絡資料
+BabyServer --> VFS: Bundle / FHIR API\nPatient + RelatedPerson*
+note right of VFS
+目前資料範圍：
+兒童、申請人／關係人的姓名、識別碼、
+聯絡方式與通訊地址。
+是否需另提供 Claim／ClaimResponse，
+應由脆家實際使用需求決定。
+end note
+@enduml

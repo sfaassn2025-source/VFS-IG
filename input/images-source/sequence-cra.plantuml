@@ -1,0 +1,28 @@
+@startuml
+autonumber
+
+skinparam sequence {
+  ArrowColor gray
+  ActorBorderColor gray
+  LifeLineBorderColor black
+}
+skinparam shadowing false
+hide footbox
+
+participant "脆弱家庭\n個案管理平台" as VFS #d1ebf1
+participant "未滿2歲兒童\n育兒津貼資訊系統" as CRA #D5E8D4
+
+VFS -> CRA: 傳送行方不明個案資訊(含撤尋)
+alt 傳送成功
+  CRA --> VFS: 取得傳送成功訊息
+  CRA -> VFS: 回饋行方不明兒童或其兄弟姊妹\n已申請育兒津貼的申請資料
+  alt 取得成功
+    VFS --> CRA: 傳送取得成功訊息
+  else 取得失敗
+    VFS --> CRA: 傳送取得失敗訊息
+  end
+else 傳送失敗
+  CRA --> VFS: 取得傳送失敗訊息
+end
+
+@enduml

@@ -1,0 +1,44 @@
+== Suppressed Messages ==
+
+% This IG generates a page named 'history.html'. That file name is reserved by the publication process, which replaces it with the directory of published versions when the IG is published, so the content generated here will be overwritten and lost. Rename the page to something else (e.g. test-history.html).%
+
+# 建議使用 OID，但本 IG 尚未申請 OID；不影響目前 FHIR 實作、驗證或術語綁定。
+% have an OID%
+
+# 下列範例為已由現行脆家案件交換範例取代的早期草稿，已在 sushi-config.yaml 設為 omit，僅保留 source 供追溯；未納入本 IG artifact 清單。
+# 此頁由 IG Publisher 內建搜尋頁模板產生；模板的 HTML 結構檢查提示不影響本 IG 定義、頁面連結或資料驗證。
+
+# 範例使用內政部與自然人憑證識別碼 system URI；該 URI 並非可供 Publisher 下載的 FHIR conformance 資源，不影響 identifier 的 URI 使用。
+% No definition could be found for URL value 'http://www.moi.gov.tw'%
+% No definition could be found for URL value 'https://moica.nat.gov.tw'%
+
+# 本 IG 繼承 TW Core IG 0.3.2；為維持與 TWSS Base IG 相容，現階段不升級至 1.0.0。
+% The ImplementationGuide uses package tw.gov.mohw.twcore#0.3.2%
+
+# ConceptMap 目標為 ISO 3166 官方代碼系統；Publisher 無完整術語內容時無法檢查所有 target code，不影響既有對應。
+% Target Code System urn:iso:std:iso:3166 doesn't have all content%
+
+# 以下為由既有 TWSS Base Profile 繼承的 R5+ 相容性提示，不影響 R4 驗證與本 IG 的實際交換規則。
+% The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.4.0 is deprecated%
+% The extension http://hl7.org/fhir/StructureDefinition/regex|5.4.0 is deprecated%
+% The discriminator type 'pattern' is deprecated in R5%
+
+# Publisher 已依 pin-canonicals 固定 PurposeOfUse 到指定版本；此訊息僅說明完成固定，並非術語或驗證問題。
+% Pinned the version of http://terminology.hl7.org/ValueSet/v3-PurposeOfUse to 3.1.0%
+
+# 戶籍地址註記為脆家情境合法使用的 Address extension；TWSS Base Address Profile 未預先定義此專案型 extension，故 Publisher 僅提示未命中 Base slice，不影響開放式 extension 驗證。
+% This element does not match any known slice defined in the profile https://sfaa.gov.tw/base/StructureDefinition/Address-twss-base%
+
+# The official address-classification extension has a preferred service-place binding.
+# VFS intentionally uses v3 AddressUse H/PST plus its approved local registered and official-service codes.
+% None of the codings provided are in the value set 'Example Service Place Codes' (http://terminology.hl7.org/ValueSet/service-place|1.0.1), and a coding is recommended to come from this value set%
+
+# Address datatype child profiles cannot be identified from an instance because Address has no meta.profile.
+% This element does not match any known slice defined in the profile https://sfaa.gov.tw/twvfs/StructureDefinition/Patient-vfs-case-exchange%
+
+# Publisher package-version resolution only; the selected versions are compatible with the VFS profile constraints.
+% Pinned the version of http://hl7.org/fhir/StructureDefinition/address-classification to 5.4.0%
+% Pinned the version of http://terminology.hl7.org/CodeSystem/v3-AddressUse to 5.0.0%
+
+# Address examples are nested in Patient and RelatedPerson examples; Publisher cannot count nested datatypes as standalone examples.
+% The Implementation Guide contains no examples for this data type profile%

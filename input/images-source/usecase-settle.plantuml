@@ -1,0 +1,33 @@
+@startuml
+scale max 650 width
+left to right direction
+skinparam shadowing false
+skinparam packageStyle rectangle
+skinparam nodesep 25
+skinparam ranksep 30
+skinparam usecase {
+  BackgroundColor white
+  BorderColor #6f7d89
+  ArrowColor gray
+}
+skinparam actor {
+  BorderColor gray
+}
+
+actor "社會福利服務\n中心社工人員" as SocialWorker
+
+rectangle "脆弱家庭\n個案管理平台" as VFS_SETTLE #d1ebf1 {
+  usecase "開啟安置個案" as OpenPlacement
+  usecase "傳送安置\n個案資料" as SendPlacement
+}
+
+rectangle "全國兒童少年安置及\n追蹤個案管理系統" as SETTLE #d5e8d4 {
+  usecase "核對主責社工\n自然人憑證卡號" as VerifyPractitioner
+  usecase "接收個案\n基本資料" as ReceiveCase
+}
+
+SocialWorker -- OpenPlacement
+OpenPlacement -down-> SendPlacement
+SendPlacement -right-> VerifyPractitioner
+VerifyPractitioner -down-> ReceiveCase
+@enduml

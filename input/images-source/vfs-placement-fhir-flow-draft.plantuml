@@ -1,0 +1,25 @@
+@startuml
+title 脆家 -> 安置：開啟安置個案（FHIR 設計草稿）
+hide footbox
+actor "脆家社工" as Worker
+participant "脆家平台" as VFS
+participant "脆家 FHIR Server" as VFSServer
+participant "安置系統" as Placement
+
+Worker -> VFS: 點選「開啟安置個案」
+VFS -> VFSServer: 建立／取得 Patient、RelatedPerson、Practitioner
+VFS -> VFSServer: 建立 ServiceRequest\n（安置個案開啟請求）
+note right of VFSServer
+ServiceRequest.subject -> Patient
+ServiceRequest.requester -> Practitioner
+RelatedPerson.relationship 表達父、母或其他關係
+end note
+VFSServer -> Placement: Bundle / FHIR API\nPatient + RelatedPerson* + Practitioner + ServiceRequest
+Placement -> Placement: 驗證請求者身分與授權
+Placement -> Placement: 建立 Task\n（受理安置請求）
+alt 受理
+  Placement --> VFSServer: Task.businessStatus = 已受理\nTask.output = 安置端案件編號
+else 退回／不受理
+  Placement --> VFSServer: Task.businessStatus = 退回／不受理\nTask.output = 原因
+end
+@enduml

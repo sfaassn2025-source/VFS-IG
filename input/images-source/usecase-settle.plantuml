@@ -1,4 +1,5 @@
 @startuml
+skinparam defaultFontName "Microsoft JhengHei"
 scale max 650 width
 left to right direction
 skinparam shadowing false

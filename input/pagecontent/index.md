@@ -29,7 +29,7 @@
 	<li>全國兒童少年安置及追蹤個案管理系統將核對系統內是否存有該名主責社工人員自然人憑證卡號，如有，則接收個案基本資料。</li>
 </ol>
 
-<div style="justify-content: center;display: flex;">{% include usecase-settle.svg %}</div>
+<div style="justify-content: center;display: flex;"><img class="figure-img img-responsive img-rounded center-block" src="usecase-settle.png" alt="脆弱家庭個案管理平台與安置系統使用情境圖" style="width: 100%; max-width: 613px; height: auto;" /></div>
 <div style="clear:both;"></div>
 
 <h5>傳送行方不明的個案資訊給未滿2歲兒童育兒津貼資訊系統</h5>
@@ -39,7 +39,7 @@
 	<li>未滿2歲兒童育兒津貼資訊系統將定期回饋行方不明的兒童或其兄弟姐妹已申請育兒津貼的申請資料予脆家平台。</li>
 </ol>
 
-<div style="justify-content: center;display: flex;">{% include usecase-cra.svg %}</div>
+<div style="justify-content: center;display: flex;"><img class="figure-img img-responsive img-rounded center-block" src="usecase-cra.png" alt="脆弱家庭個案管理平台與育兒津貼系統使用情境圖" style="width: 100%; max-width: 618px; height: auto;" /></div>
 <div style="clear:both;"></div>
 </div>
 
@@ -53,7 +53,7 @@
 	<li>若傳送失敗，全國兒童少年安置及追蹤個案管理系統回傳傳送失敗訊息。</li>
 </ol>
 
-<div style="justify-content: center;display: flex;">{% include sequence-settle.svg %}</div>
+<div style="justify-content: center;display: flex;"><img class="figure-img img-responsive img-rounded center-block" src="sequence-settle.png" alt="脆弱家庭個案管理平台與安置系統循序圖" style="width: 100%; max-width: 477px; height: auto;" /></div>
 <div style="clear:both;"></div>
 
 <h5>傳送行方不明的個案資訊給未滿2歲兒童育兒津貼資訊系統</h5>
@@ -64,7 +64,7 @@
 	<li>若取得成功，脆家平台回傳傳送成功訊息；若取得失敗，回傳傳送失敗訊息。</li>
 </ol>
 
-<div style="justify-content: center;display: flex;">{% include sequence-cra.svg %}</div>
+<div style="justify-content: center;display: flex;"><img class="figure-img img-responsive img-rounded center-block" src="sequence-cra.png" alt="脆弱家庭個案管理平台與育兒津貼系統循序圖" style="width: 100%; max-width: 386px; height: auto;" /></div>
 <div style="clear:both;"></div>
 </div>
 

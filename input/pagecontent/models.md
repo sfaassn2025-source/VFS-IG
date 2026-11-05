@@ -1,3 +1,7 @@
-以下為本 IG 所有的邏輯模型。邏輯模型定義各交換情境使用的資料欄位；實作者可透過各模型的「Mappings」頁籤，瞭解欄位實際對應的 FHIR Resource 與 element。
+以下為本IG所有的邏輯模型。
 
-{% include table-logicals.xhtml %}
+1. [衛生福利部社會及家庭署脆弱家庭管理傳送至安置系統資料模型](StructureDefinition-SettleModel.html)
+
+2. [脆弱家庭個案管理平台至未滿兩歲兒童育兒津貼資訊系統資料模型](StructureDefinition-VFSToCRAModel.html)
+
+3. [未滿兩歲兒童育兒津貼資訊系統至脆弱家庭個案管理平台資料模型](StructureDefinition-VFSFromCRAModel.html)

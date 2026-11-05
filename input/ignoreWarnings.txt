@@ -18,6 +18,12 @@
 # ConceptMap 目標為 ISO 3166 官方代碼系統；Publisher 無完整術語內容時無法檢查所有 target code，不影響既有對應。
 % Target Code System urn:iso:std:iso:3166 doesn't have all content%
 
+# 國籍範例沿用 ISO 3166 官方 system URI；FHIR R4 核心 package 未提供可供 Publisher 驗證的完整 CodeSystem 定義，故無法離線驗證代碼。
+% A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated%
+
+# 本機建置未連接 terminology server，既有 ValueSet 的 include concept 無法於建置時展開驗證。
+% The concepts in the value set include have not been validated because there is no terminology server%
+
 # 以下為由既有 TWSS Base Profile 繼承的 R5+ 相容性提示，不影響 R4 驗證與本 IG 的實際交換規則。
 % The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.4.0 is deprecated%
 % The extension http://hl7.org/fhir/StructureDefinition/regex|5.4.0 is deprecated%
@@ -39,6 +45,9 @@
 # Publisher package-version resolution only; the selected versions are compatible with the VFS profile constraints.
 % Pinned the version of http://hl7.org/fhir/StructureDefinition/address-classification to 5.4.0%
 % Pinned the version of http://terminology.hl7.org/CodeSystem/v3-AddressUse to 5.0.0%
+
+# workflow-episodeOfCare uses its official canonical. pin-canonicals selects the latest loaded package version.
+% Pinned the version of http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare to 5.4.0%
 
 # Address examples are nested in Patient and RelatedPerson examples; Publisher cannot count nested datatypes as standalone examples.
 % The Implementation Guide contains no examples for this data type profile%

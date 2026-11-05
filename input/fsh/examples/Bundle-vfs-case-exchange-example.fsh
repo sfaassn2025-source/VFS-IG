@@ -11,11 +11,5 @@ Usage: #example
 * entry[relatedPerson][1].resource = vfs-mother-example
 * entry[practitioner][0].fullUrl = "https://sfaa.gov.tw/twvfs/Practitioner/vfs-social-worker-example"
 * entry[practitioner][0].resource = vfs-social-worker-example
-* entry[organization].fullUrl = "https://sfaa.gov.tw/twvfs/Organization/vfs-responsible-organization-example"
-* entry[organization].resource = vfs-responsible-organization-example
-* entry[caseReport].fullUrl = "https://sfaa.gov.tw/twvfs/ServiceRequest/vfs-case-report-example"
-* entry[caseReport].resource = vfs-case-report-example
-* entry[episodeOfCare].fullUrl = "https://sfaa.gov.tw/twvfs/EpisodeOfCare/vfs-episode-of-care-example"
-* entry[episodeOfCare].resource = vfs-episode-of-care-example
-* entry[searchRevocationProvenance].fullUrl = "https://sfaa.gov.tw/twvfs/Provenance/vfs-search-revocation-provenance-example"
-* entry[searchRevocationProvenance].resource = vfs-search-revocation-provenance-example
+* entry[placementRequest].fullUrl = "https://sfaa.gov.tw/twvfs/ServiceRequest/vfs-placement-request-example"
+* entry[placementRequest].resource = vfs-placement-request-example

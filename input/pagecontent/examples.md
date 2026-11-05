@@ -22,6 +22,7 @@
 
 #### ServiceRequest
 - [脆弱家庭個案通報範例](ServiceRequest-vfs-case-report-example.html)
+- [脆弱家庭安置案件申請範例](ServiceRequest-vfs-placement-request-example.html)
 
 #### EpisodeOfCare
 - [脆弱家庭案件範例](EpisodeOfCare-vfs-episode-of-care-example.html)

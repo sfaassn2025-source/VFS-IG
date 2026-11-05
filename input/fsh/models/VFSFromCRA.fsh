@@ -10,6 +10,7 @@ Description: "定義未滿兩歲兒童育兒津貼資訊系統傳送至脆弱家
 * applicant 0..2 BackboneElement "申請人" "最多可填寫二位，分別表達申請人1與申請人2。"
 * applicant.name 0..1 HumanName "申請人姓名"
 * applicant.contactTel 0..1 ContactPoint "申請人聯絡電話"
+* applicant.relationship 0..1 CodeableConcept "申請人與兒童關係"
 
 Mapping: VFSFromCRAModelToPatient
 Id: vfs-from-cra-model-to-patient
@@ -28,3 +29,4 @@ Source: VFSFromCRAModel
 Target: "https://sfaa.gov.tw/twvfs/StructureDefinition/RelatedPerson-vfs-case-exchange"
 * applicant.name -> "RelatedPerson.name" "每一個 applicant 群組對應一筆 RelatedPerson"
 * applicant.contactTel -> "RelatedPerson.telecom.where(system = 'phone')" "每一個 applicant 群組對應一筆 RelatedPerson"
+* applicant.relationship -> "RelatedPerson.relationship" "申請人與兒童關係"

@@ -49,11 +49,27 @@ Id: settlemodel-to-bundle-vfs-case-exchange
 Title: "脆弱家庭管理傳送至安置系統資料模型對應Bundle TWVFS Profile"
 Source: SettleModel
 Target: "https://sfaa.gov.tw/twvfs/StructureDefinition/Bundle-vfs-settle-exchange"
-* -> "Bundle" "transaction交換資料包"
+* -> "Bundle" "collection交換資料包"
 * socialWorkerInfo -> "Bundle.entry.resource.ofType(Practitioner)" "主責社工人員資料"
 * caseInfo -> "Bundle.entry.resource.ofType(Patient)" "個案資料"
 * familyInfo -> "Bundle.entry.resource.ofType(RelatedPerson)" "家庭或關係人資料"
 
+
+Mapping: SettleModelToServiceRequestVFSPlacement
+Id: settlemodel-to-service-request-vfs-placement
+Title: "脆弱家庭個案管理平台傳送安置案件申請對應 ServiceRequest VFS Profile"
+Source: SettleModel
+Target: "https://sfaa.gov.tw/twvfs/StructureDefinition/ServiceRequest-vfs-placement"
+* caseInfo -> "ServiceRequest.subject -> Patient" "待安置個案"
+* socialWorkerInfo -> "ServiceRequest.requester -> Practitioner" "提出安置案件申請的主責社工"
+
+Mapping: SettleModelToBundleVFSPlacementRequest
+Id: settlemodel-to-bundle-vfs-placement-request
+Title: "脆弱家庭個案管理平台傳送安置案件申請對應 Bundle VFS"
+Source: SettleModel
+Target: "https://sfaa.gov.tw/twvfs/StructureDefinition/Bundle-vfs-settle-exchange"
+* caseInfo -> "Bundle.entry[placementRequest].resource -> ServiceRequest.subject" "待安置個案"
+* socialWorkerInfo -> "Bundle.entry[placementRequest].resource -> ServiceRequest.requester" "提出安置案件申請的主責社工"
 
 Mapping: SettleModelToPractitionerVFSCaseExchange
 Id: settlemodel-to-practitioner-vfs-case-exchange

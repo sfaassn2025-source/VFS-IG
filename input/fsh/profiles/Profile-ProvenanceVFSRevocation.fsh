@@ -12,6 +12,7 @@ Description: "脆弱家庭行方不明案件之撤尋紀錄；記錄撤尋發生
 * recorded 1..1 MS
 * recorded ^short = "撤尋紀錄登錄時間"
 * activity 1..1 MS
+* activity = http://terminology.hl7.org/CodeSystem/v3-DataOperation#UPDATE "update"
 * activity ^short = "撤尋資料異動活動"
 * agent 1..1 MS
 * agent.role from http://terminology.hl7.org/ValueSet/v3-PurposeOfUse|3.1.0

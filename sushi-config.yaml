@@ -49,6 +49,8 @@ resources:
     description: 脆家個案資料範例。
   ServiceRequest/vfs-case-report-example:
     description: 脆家個案通報範例。
+  ServiceRequest/vfs-placement-request-example:
+    description: 脆弱家庭安置案件申請範例。
   EpisodeOfCare/vfs-episode-of-care-example:
     description: 脆家個案服務期間範例。
   RelatedPerson/vfs-father-example:
@@ -59,9 +61,9 @@ resources:
     description: 脆家主責社工範例。
 
   RelatedPerson/vfs-mother-example:
-    description: Mother related person example.
+    description: 脆家個案母親關係人範例。
   Provenance/vfs-search-revocation-provenance-example:
-    description: Search revocation provenance example.
+    description: 脆家撤尋紀錄範例。
 
 #
 #

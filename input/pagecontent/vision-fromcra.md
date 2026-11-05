@@ -1,6 +1,6 @@
 ### 視覺化邏輯模型圖
 <div  style="padding-left: 10px;"> 
-<!-- 請置入育兒津貼回饋脆弱家庭視覺化邏輯模型圖。 -->
+<img class="figure-img img-responsive img-rounded center-block" src="fromcra.svg" alt="育兒津貼回饋脆弱家庭視覺化邏輯模型圖" style="display: block;margin-left: auto;margin-right: auto;width: 100%;" />
 </div>
 
 ### 圖例說明圖

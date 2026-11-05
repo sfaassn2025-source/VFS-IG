@@ -13,4 +13,5 @@ Usage: #example
 * status = #active
 * intent = #order
 * subject = Reference(vfs-case-patient-example)
+* extension[workflowEpisodeOfCare].valueReference = Reference(vfs-episode-of-care-example)
 * authoredOn = "2026-10-20T09:30:00+08:00"

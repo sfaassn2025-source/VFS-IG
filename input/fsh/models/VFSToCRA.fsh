@@ -43,6 +43,13 @@ Source: VFSToCRAModel
 Target: "https://sfaa.gov.tw/twvfs/StructureDefinition/ServiceRequest-vfs-case-report"
 * reportTime -> "ServiceRequest.authoredOn" "通報時間"
 
+Mapping: VFSToCRAModelToServiceRequestEpisodeOfCareReference
+Id: vfs-to-cra-model-to-service-request-episode-of-care-reference
+Title: "脆家傳送育兒津貼之通報與行方不明案件關聯"
+Source: VFSToCRAModel
+Target: "https://sfaa.gov.tw/twvfs/StructureDefinition/ServiceRequest-vfs-case-report"
+* -> "ServiceRequest.extension[workflowEpisodeOfCare].valueReference -> EpisodeOfCare" "個案通報所屬行方不明案件"
+
 Mapping: VFSToCRAModelToPractitioner
 Id: vfs-to-cra-model-to-practitioner
 Title: "脆家至育兒津貼資料模型對應主責社工-Practitioner（使用VFS Profile）"

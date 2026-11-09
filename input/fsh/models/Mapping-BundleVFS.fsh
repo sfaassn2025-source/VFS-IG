@@ -4,7 +4,8 @@ Title: "育兒津貼回饋脆家邏輯模型對應至育兒津貼回饋脆家-Bu
 Source: VFSFromCRAModel
 Target: "https://sfaa.gov.tw/twvfs/StructureDefinition/Bundle-vfs-from-cra-exchange"
 * childIdCardNumber -> "Bundle.entry[patient].resource" "兒童個案資源"
-* applicant -> "Bundle.entry[applicant].resource" "每名申請人對應一筆關係人資源；Bundle slice 表達其為本次育兒津貼資料回饋的申請人"
+* applicant1 -> "Bundle.entry[applicant].resource" "申請人1對應一筆關係人資源；Bundle slice 表達其為本次育兒津貼資料回饋的申請人"
+* applicant2 -> "Bundle.entry[applicant].resource" "申請人2對應一筆關係人資源；Bundle slice 表達其為本次育兒津貼資料回饋的申請人"
 
 Mapping: VFSToCRAModelToBundleVFSToCRAExchange
 Id: vfs-to-cra-model-to-bundle

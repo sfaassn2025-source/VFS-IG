@@ -68,6 +68,46 @@
 <div style="clear:both;"></div>
 </div>
 
+#### 系統間 FHIR 資料交換方向
+<div style="padding-left: 10px;">
+<p>以下說明各系統間使用 FHIR 進行資料交換的方向。</p>
+
+<div class="panel panel-default">
+  <div class="panel-heading"><strong>安置案件交換</strong></div>
+  <div class="panel-body">
+    <div class="row" style="display: flex; align-items: center;">
+      <div class="col-sm-5 text-center"><strong>全國兒童少年安置及追蹤個案管理系統</strong><br/><span class="label label-info">FHIR Client</span></div>
+      <div class="col-sm-2 text-center" style="font-size: 18px;"><code>GET</code> &rarr;</div>
+      <div class="col-sm-5 text-center"><strong>脆弱家庭個案資料提供端</strong><br/><span class="label label-success">FHIR API</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading"><strong>行方不明案件資料提供</strong></div>
+  <div class="panel-body">
+    <div class="row" style="display: flex; align-items: center;">
+      <div class="col-sm-5 text-center"><strong>未滿兩歲兒童育兒津貼資訊系統</strong><br/><span class="label label-info">FHIR Client</span></div>
+      <div class="col-sm-2 text-center" style="font-size: 18px;"><code>GET</code> &rarr;</div>
+      <div class="col-sm-5 text-center"><strong>脆弱家庭個案資料提供端</strong><br/><span class="label label-success">FHIR API</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading"><strong>育兒津貼申請資料回饋</strong></div>
+  <div class="panel-body">
+    <div class="row" style="display: flex; align-items: center;">
+      <div class="col-sm-5 text-center"><strong>脆弱家庭個案管理平台</strong><br/><span class="label label-info">FHIR Client</span></div>
+      <div class="col-sm-2 text-center" style="font-size: 18px;"><code>GET</code> &rarr;</div>
+      <div class="col-sm-5 text-center"><strong>未滿兩歲兒童育兒津貼資料提供端</strong><br/><span class="label label-success">FHIR API</span></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<p>行方不明案件資料提供與育兒津貼申請資料回饋為獨立的資料交換情境；圖中的 <code>GET</code> 僅表示資料取得方向。</p>
+
 
 
 ### 如何閱讀這個實作指引(IG)

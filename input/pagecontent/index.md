@@ -83,6 +83,9 @@
   </div>
 </div>
 
+<div style="justify-content: center;display: flex;"><img class="figure-img img-responsive img-rounded center-block" src="sequence-fhir-api-settle.png" alt="安置系統查詢脆弱家庭個案管理平台 FHIR API 循序圖" style="width: 60%; max-width: 560px; height: auto;" /></div>
+<div style="clear:both;"></div>
+
 <div class="panel panel-default">
   <div class="panel-heading"><strong>行方不明案件資料提供</strong></div>
   <div class="panel-body">
@@ -94,6 +97,9 @@
   </div>
 </div>
 
+<div style="justify-content: center;display: flex;"><img class="figure-img img-responsive img-rounded center-block" src="sequence-fhir-api-to-cra.png" alt="育兒津貼系統查詢脆弱家庭個案管理平台 FHIR API 循序圖" style="width: 60%; max-width: 560px; height: auto;" /></div>
+<div style="clear:both;"></div>
+
 <div class="panel panel-default">
   <div class="panel-heading"><strong>育兒津貼申請資料回饋</strong></div>
   <div class="panel-body">
@@ -104,6 +110,9 @@
     </div>
   </div>
 </div>
+
+<div style="justify-content: center;display: flex;"><img class="figure-img img-responsive img-rounded center-block" src="sequence-fhir-api-from-cra.png" alt="脆弱家庭個案管理平台查詢育兒津貼系統 FHIR API 循序圖" style="width: 60%; max-width: 560px; height: auto;" /></div>
+<div style="clear:both;"></div>
 </div>
 
 <p>行方不明案件資料提供與育兒津貼申請資料回饋為獨立的資料交換情境；圖中的 <code>GET</code> 僅表示資料取得方向。</p>

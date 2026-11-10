@@ -83,7 +83,7 @@
   </div>
 </div>
 
-<div style="justify-content: center;display: flex;"><img class="figure-img img-responsive img-rounded center-block" src="sequence-fhir-api-settle.png" alt="安置系統查詢脆弱家庭個案管理平台 FHIR API 循序圖" style="width: 60%; max-width: 560px; height: auto;" /></div>
+<div style="justify-content: center;display: flex;"><img class="figure-img img-responsive img-rounded center-block" src="sequence-fhir-api-settle.png" alt="安置系統查詢脆弱家庭個案管理平台 FHIR API 循序圖" style="width: 100%; max-width: 477px; height: auto;" /></div>
 <div style="clear:both;"></div>
 
 <div class="panel panel-default">
@@ -97,7 +97,7 @@
   </div>
 </div>
 
-<div style="justify-content: center;display: flex;"><img class="figure-img img-responsive img-rounded center-block" src="sequence-fhir-api-to-cra.png" alt="育兒津貼系統查詢脆弱家庭個案管理平台 FHIR API 循序圖" style="width: 60%; max-width: 560px; height: auto;" /></div>
+<div style="justify-content: center;display: flex;"><img class="figure-img img-responsive img-rounded center-block" src="sequence-fhir-api-to-cra.png" alt="育兒津貼系統查詢脆弱家庭個案管理平台 FHIR API 循序圖" style="width: 100%; max-width: 386px; height: auto;" /></div>
 <div style="clear:both;"></div>
 
 <div class="panel panel-default">
@@ -111,7 +111,7 @@
   </div>
 </div>
 
-<div style="justify-content: center;display: flex;"><img class="figure-img img-responsive img-rounded center-block" src="sequence-fhir-api-from-cra.png" alt="脆弱家庭個案管理平台查詢育兒津貼系統 FHIR API 循序圖" style="width: 60%; max-width: 560px; height: auto;" /></div>
+<div style="justify-content: center;display: flex;"><img class="figure-img img-responsive img-rounded center-block" src="sequence-fhir-api-from-cra.png" alt="脆弱家庭個案管理平台查詢育兒津貼系統 FHIR API 循序圖" style="width: 100%; max-width: 386px; height: auto;" /></div>
 <div style="clear:both;"></div>
 </div>
 

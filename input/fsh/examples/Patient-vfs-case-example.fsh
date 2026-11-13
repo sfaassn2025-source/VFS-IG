@@ -15,7 +15,7 @@ Usage: #example
   <p><b>居住地址</b>：11557臺北市南港區重陽路 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://hl7.org/fhir/R4/v3/AddressUse/cs.html">v3 AddressUse</a>#H）</span></p>
   <p><b>通訊地址</b>：10488臺北市中山區南京東路二段1號 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://hl7.org/fhir/R4/v3/AddressUse/cs.html">v3 AddressUse</a>#PST）</span></p>
   <p><b>公文送達地址</b>：11070臺北市信義區松仁路100號 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="CodeSystem-vfs-address-classification-cs.html">TWVFS 地址分類</a>#official-service）</span></p>
-  <p><b>國籍</b>：臺灣 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://terminology.hl7.org/CodeSystem-ISO3166Part1.html">ISO3166Part1</a>#TW）</span>；<b>族群身分</b>：一般 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://build.fhir.org/ig/sfaassn2025-source/base/CodeSystem-twss-ethnic-group.html">TWSS 族群身分代碼</a>#A）</span></p>
+  <p><b>國籍</b>：臺灣 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://terminology.hl7.org/CodeSystem-ISO3166Part1.html">ISO3166Part1</a>#TW）</span>；<b>族群身分</b>：一般 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://twssbase.sfaa.gov.tw/ig/base/CodeSystem-twss-ethnic-group.html">TWSS 族群身分代碼</a>#A）</span></p>
 </div>
 """
 * active = true
@@ -28,7 +28,7 @@ Usage: #example
 * telecom[0].system = #phone
 * telecom[0].value = "0912345678"
 * address[registered].text = "11558臺北市南港區新光里忠孝東路六段488號"
-* address[registered].extension[addressClassification].valueCodeableConcept.coding[0].system = "https://sfaa.gov.tw/twvfs/CodeSystem/vfs-address-classification-cs"
+* address[registered].extension[addressClassification].valueCodeableConcept.coding[0].system = "https://twssbase.sfaa.gov.tw/ig/vfs/CodeSystem/vfs-address-classification-cs"
 * address[registered].extension[addressClassification].valueCodeableConcept.coding[0].code = #registered
 * address[registered].extension[addressClassification].valueCodeableConcept.coding[0].display = "戶籍地址"
 * address[residence].text = "11557臺北市南港區三重里園區街3號"
@@ -40,11 +40,11 @@ Usage: #example
 * address[correspondence].extension[addressClassification].valueCodeableConcept.coding[0].code = #PST
 * address[correspondence].extension[addressClassification].valueCodeableConcept.coding[0].display = "postal address"
 * address[officialService].text = "11070臺北市信義區松仁路100號"
-* address[officialService].extension[addressClassification].valueCodeableConcept.coding[0].system = "https://sfaa.gov.tw/twvfs/CodeSystem/vfs-address-classification-cs"
+* address[officialService].extension[addressClassification].valueCodeableConcept.coding[0].system = "https://twssbase.sfaa.gov.tw/ig/vfs/CodeSystem/vfs-address-classification-cs"
 * address[officialService].extension[addressClassification].valueCodeableConcept.coding[0].code = #official-service
 * address[officialService].extension[addressClassification].valueCodeableConcept.coding[0].display = "公文送達地址"
 * extension[nationality].extension[code].valueCodeableConcept.coding[0].system = "urn:iso:std:iso:3166"
 * extension[nationality].extension[code].valueCodeableConcept.coding[0].code = #TW
-* extension[ethnicGroup].valueCodeableConcept.coding[0].system = "https://sfaa.gov.tw/base/CodeSystem/twss-ethnic-group"
+* extension[ethnicGroup].valueCodeableConcept.coding[0].system = "https://twssbase.sfaa.gov.tw/ig/base/CodeSystem/twss-ethnic-group"
 * extension[ethnicGroup].valueCodeableConcept.coding[0].code = #A
 * extension[ethnicGroup].valueCodeableConcept.coding[0].display = "一般"

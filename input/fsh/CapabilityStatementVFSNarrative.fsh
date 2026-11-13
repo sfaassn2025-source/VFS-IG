@@ -4,7 +4,7 @@ RuleSet: VFSNarrative(mode, role)
 <div xmlns="http://www.w3.org/1999/xhtml">
   <h2>衛生福利部社會及家庭署脆弱家庭個案管理平台實作指引-{role}</h2>
   <ul>
-    <li>實作指引版本：0.0.1</li>
+    <li>實作指引版本：0.1.0</li>
     <li>FHIR版本：4.0.1</li>
     <li>支援格式：<code>json</code>、<code>xml</code></li>
     <li>發布單位：衛生福利部社會及家庭署</li>
@@ -12,7 +12,7 @@ RuleSet: VFSNarrative(mode, role)
   <h3>建議應該（SHOULD）實作的IGs</h3>
   <ul>
     <li><a href="index.html">衛生福利部社會及家庭署脆弱家庭個案管理平台實作指引</a></li>
-    <li><a href="https://build.fhir.org/ig/sfaassn2025-source/base/">臺灣社政領域基礎實作指引（TWSS Base IG）</a></li>
+    <li><a href="https://twssbase.sfaa.gov.tw/ig/base/">臺灣社政領域基礎實作指引（TWSS Base IG）</a></li>
   </ul>
   <h2>{mode} FHIR RESTful功能要求</h2>
   <div class="panel panel-default"><div class="panel-heading"><h3 class="panel-title">能力聲明摘要</h3></div><div class="panel-body"><p>{role}建議應該（SHOULD）支援本能力聲明所列之 Resource 與 Profile，並以 FHIR R4 RESTful API 交換資料。Resource 的 create、read、vread 與 update 互動建議應該（SHOULD）支援；查詢功能可能可以（MAY）支援。</p></div></div>

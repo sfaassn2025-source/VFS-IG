@@ -4,12 +4,12 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: tw.gov.mohw.sfaa.vfs
-canonical: https://sfaa.gov.tw/twvfs
+canonical: https://twssbase.sfaa.gov.tw/ig/vfs
 name: TWVFS
 title: 衛生福利部社會及家庭署脆弱家庭管理實作指引
 description: 衛生福利部社會及家庭署脆弱家庭管理實作指引(TWVFS IG)
 status: draft # draft | active | retired | unknown
-version: 0.0.1
+version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2025+
 releaseLabel: ci-build
@@ -27,7 +27,7 @@ publisher:
 dependencies:
    tw.gov.mohw.twss.base:
     id: TWSSBase
-    uri: https://sfaa.gov.tw/base/ImplementationGuide/tw.gov.mohw.twss.base
+    uri: https://twssbase.sfaa.gov.tw/ig/base/ImplementationGuide/tw.gov.mohw.twss.base
     version: current
    tw.gov.mohw.twcore:
     id: TWCore

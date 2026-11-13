@@ -14,7 +14,7 @@ Usage: #example
   <p><b>姓名</b>：王媽媽；<b>性別</b>：女性 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://hl7.org/fhir/R4/codesystem-administrative-gender.html">AdministrativeGender</a>#female）</span>；<b>出生日期</b>：1987-06-15；<b>聯絡電話</b>：0922333444；<b>聯絡方式</b>：Phone <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://hl7.org/fhir/R4/valueset-contact-point-system.html">ContactPointSystem</a>#phone）</span></p>
   <p><b>戶籍地址</b>：10048臺北市中正區重慶南路一段5號 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="CodeSystem-vfs-address-classification-cs.html">TWVFS 地址分類</a>#registered）</span></p>
   <p><b>居住地址</b>：11557臺北市南港區重陽路 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://hl7.org/fhir/R4/v3/AddressUse/cs.html">v3 AddressUse</a>#H）</span></p>
-  <p><b>國籍</b>：臺灣 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://terminology.hl7.org/CodeSystem-ISO3166Part1.html">ISO3166Part1</a>#TWN）</span>；<b>族群身分</b>：一般 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://build.fhir.org/ig/sfaassn2025-source/base/CodeSystem-twss-ethnic-group.html">TWSS 族群身分代碼</a>#A）</span></p>
+  <p><b>國籍</b>：臺灣 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://terminology.hl7.org/CodeSystem-ISO3166Part1.html">ISO3166Part1</a>#TWN）</span>；<b>族群身分</b>：一般 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://twssbase.sfaa.gov.tw/ig/base/CodeSystem-twss-ethnic-group.html">TWSS 族群身分代碼</a>#A）</span></p>
 </div>
 """
 * active = true
@@ -37,7 +37,7 @@ Usage: #example
 * telecom[0].system = #phone
 * telecom[0].value = "0922333444"
 * address[registered].text = "10048臺北市中正區幸福里杭州南路一段15號"
-* address[registered].extension[addressClassification].valueCodeableConcept.coding[0].system = "https://sfaa.gov.tw/twvfs/CodeSystem/vfs-address-classification-cs"
+* address[registered].extension[addressClassification].valueCodeableConcept.coding[0].system = "https://twssbase.sfaa.gov.tw/ig/vfs/CodeSystem/vfs-address-classification-cs"
 * address[registered].extension[addressClassification].valueCodeableConcept.coding[0].code = #registered
 * address[registered].extension[addressClassification].valueCodeableConcept.coding[0].display = "戶籍地址"
 * address[residence].text = "11557臺北市南港區三重里園區街3號"
@@ -46,6 +46,6 @@ Usage: #example
 * address[residence].extension[addressClassification].valueCodeableConcept.coding[0].display = "home address"
 * extension[nationality].valueCodeableConcept.coding[0].system = "urn:iso:std:iso:3166"
 * extension[nationality].valueCodeableConcept.coding[0].code = #TWN
-* extension[ethnicGroup].valueCodeableConcept.coding[0].system = "https://sfaa.gov.tw/base/CodeSystem/twss-ethnic-group"
+* extension[ethnicGroup].valueCodeableConcept.coding[0].system = "https://twssbase.sfaa.gov.tw/ig/base/CodeSystem/twss-ethnic-group"
 * extension[ethnicGroup].valueCodeableConcept.coding[0].code = #A
 * extension[ethnicGroup].valueCodeableConcept.coding[0].display = "一般"

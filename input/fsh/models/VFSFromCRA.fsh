@@ -18,7 +18,7 @@ Mapping: VFSFromCRAModelToPatient
 Id: vfs-from-cra-model-to-patient
 Title: "育兒津貼至脆家資料模型對應個案-Patient（使用VFS Profile）"
 Source: VFSFromCRAModel
-Target: "https://sfaa.gov.tw/twvfs/StructureDefinition/Patient-vfs-case-exchange"
+Target: "https://twssbase.sfaa.gov.tw/ig/vfs/StructureDefinition/Patient-vfs-case-exchange"
 * childName -> "Patient.name" "兒童姓名"
 * childIdCardNumber -> "Patient.identifier[idCardNumber]" "兒童身分證號"
 * contactAddress -> "Patient.address[correspondence].text" "通訊地址完整文字"
@@ -28,7 +28,7 @@ Mapping: VFSFromCRAModelToRelatedPerson
 Id: vfs-from-cra-model-to-related-person
 Title: "育兒津貼至脆家資料模型對應申請人-RelatedPerson（使用VFS Profile）"
 Source: VFSFromCRAModel
-Target: "https://sfaa.gov.tw/twvfs/StructureDefinition/RelatedPerson-vfs-case-exchange"
+Target: "https://twssbase.sfaa.gov.tw/ig/vfs/StructureDefinition/RelatedPerson-vfs-case-exchange"
 * applicant1.name -> "RelatedPerson.name" "申請人1對應一筆 RelatedPerson"
 * applicant1.telecom -> "RelatedPerson.telecom.where(system = 'phone')" "申請人1對應一筆 RelatedPerson"
 * applicant2.name -> "RelatedPerson.name" "申請人2對應一筆 RelatedPerson"

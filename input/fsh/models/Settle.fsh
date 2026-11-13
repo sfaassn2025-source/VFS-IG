@@ -7,7 +7,7 @@ Description: """
 瞭解各資料欄位實際使用本IG的哪個Profiles的哪個資料項目（element）。亦可配合
 [視覺化邏輯模型圖]進行欄位對應。
 """
-//* ^version = "0.0.1"
+//* ^version = "0.1.0"
 
 * socialWorkerInfo 1..1 BackboneElement "主責社工資訊"
 * socialWorkerInfo.responsibleSocialWorkerCitizenCert 1..1 Identifier "主責社工自然人憑證卡號"
@@ -48,7 +48,7 @@ Mapping: SettleModelToBundleVFSSettleExchange
 Id: settlemodel-to-bundle-vfs-case-exchange
 Title: "脆弱家庭管理傳送至安置系統資料模型對應Bundle TWVFS Profile"
 Source: SettleModel
-Target: "https://sfaa.gov.tw/twvfs/StructureDefinition/Bundle-vfs-settle-exchange"
+Target: "https://twssbase.sfaa.gov.tw/ig/vfs/StructureDefinition/Bundle-vfs-settle-exchange"
 * -> "Bundle" "collection交換資料包"
 * socialWorkerInfo -> "Bundle.entry.resource.ofType(Practitioner)" "主責社工人員資料"
 * caseInfo -> "Bundle.entry.resource.ofType(Patient)" "個案資料"
@@ -59,7 +59,7 @@ Mapping: SettleModelToServiceRequestVFSPlacement
 Id: settlemodel-to-service-request-vfs-placement
 Title: "脆弱家庭個案管理平台傳送安置案件申請對應 ServiceRequest VFS Profile"
 Source: SettleModel
-Target: "https://sfaa.gov.tw/twvfs/StructureDefinition/ServiceRequest-vfs-placement"
+Target: "https://twssbase.sfaa.gov.tw/ig/vfs/StructureDefinition/ServiceRequest-vfs-placement"
 * caseInfo -> "ServiceRequest.subject -> Patient" "待安置個案"
 * socialWorkerInfo -> "ServiceRequest.requester -> Practitioner" "提出安置案件申請的主責社工"
 
@@ -67,7 +67,7 @@ Mapping: SettleModelToBundleVFSPlacementRequest
 Id: settlemodel-to-bundle-vfs-placement-request
 Title: "脆弱家庭個案管理平台傳送安置案件申請對應 Bundle VFS"
 Source: SettleModel
-Target: "https://sfaa.gov.tw/twvfs/StructureDefinition/Bundle-vfs-settle-exchange"
+Target: "https://twssbase.sfaa.gov.tw/ig/vfs/StructureDefinition/Bundle-vfs-settle-exchange"
 * caseInfo -> "Bundle.entry[placementRequest].resource -> ServiceRequest.subject" "待安置個案"
 * socialWorkerInfo -> "Bundle.entry[placementRequest].resource -> ServiceRequest.requester" "提出安置案件申請的主責社工"
 
@@ -75,7 +75,7 @@ Mapping: SettleModelToPractitionerVFSCaseExchange
 Id: settlemodel-to-practitioner-vfs-case-exchange
 Title: "脆弱家庭管理傳送至安置系統資料模型對應Practitioner TWVFS Profile"
 Source: SettleModel
-Target: "https://sfaa.gov.tw/twvfs/StructureDefinition/Practitioner-vfs-case-exchange"
+Target: "https://twssbase.sfaa.gov.tw/ig/vfs/StructureDefinition/Practitioner-vfs-case-exchange"
 * socialWorkerInfo -> "Practitioner" "主責社工人員資料"
 * socialWorkerInfo.responsibleSocialWorkerCitizenCert -> "Practitioner.identifier[citizenDigitalCertificate]" "主責社工自然人憑證卡號"
 
@@ -83,7 +83,7 @@ Mapping: SettleModelToPatientVFSCaseExchange
 Id: settlemodel-to-patient-vfs-case-exchange
 Title: "脆弱家庭管理傳送至安置系統資料模型對應Patient（使用VFS Profile）"
 Source: SettleModel
-Target: "https://sfaa.gov.tw/twvfs/StructureDefinition/Patient-vfs-case-exchange"
+Target: "https://twssbase.sfaa.gov.tw/ig/vfs/StructureDefinition/Patient-vfs-case-exchange"
 * caseInfo -> "Patient" "個案資料"
 * caseInfo.name -> "Patient.name" "姓名"
 * caseInfo.birthDate -> "Patient.birthDate" "生日"
@@ -99,7 +99,7 @@ Mapping: SettleModelToRelatedPersonVFSCaseExchange
 Id: settlemodel-to-relatedperson-vfs-case-exchange
 Title: "脆弱家庭管理傳送至安置系統資料模型對應RelatedPerson（使用VFS Profile）"
 Source: SettleModel
-Target: "https://sfaa.gov.tw/twvfs/StructureDefinition/RelatedPerson-vfs-case-exchange"
+Target: "https://twssbase.sfaa.gov.tw/ig/vfs/StructureDefinition/RelatedPerson-vfs-case-exchange"
 * familyInfo -> "RelatedPerson" "父母或家庭關係人資料"
 * familyInfo.fatherName -> "RelatedPerson.where(relationship.coding.code = 'FTH').name" "父親姓名"
 * familyInfo.motherName -> "RelatedPerson.where(relationship.coding.code = 'MTH').name" "母親姓名"

@@ -5,7 +5,7 @@
 ### 專案介紹
 <div  style="padding-left: 10px;"> 
 
-<p>脆弱家庭個案管理服務實作指引(Vulnerable Families Case Management Service Base IG, VFS IG)採用HL7® FHIR® standard（Fast Healthcare Interoperability Resources）IG建置方法，在FHIR R4.0.1之標準基礎上，繼承<a href="https://build.fhir.org/ig/sfaassn2025-source/base/">臺灣社政領域基礎實作指引（TWSS Base IG）</a>，並透過 TWSS Base IG 延用TW Core IG V 0.3.2 (2024-12-12)的共通交換規則；本指引再進一步定義適用於「脆弱家庭個案管理服務實作指引(以下簡稱本專案)」資料需求的Resources（類似資料表）、其中的資料項目（意即欄位）、基數（意即0..1、0..*、1..1或1..*）及資料類型（文字、日期時間、代碼等）等。</p>
+<p>脆弱家庭個案管理服務實作指引(Vulnerable Families Case Management Service Base IG, VFS IG)採用HL7® FHIR® standard（Fast Healthcare Interoperability Resources）IG建置方法，在FHIR R4.0.1之標準基礎上，繼承<a href="https://twssbase.sfaa.gov.tw/ig/base/">臺灣社政領域基礎實作指引（TWSS Base IG）</a>，並透過 TWSS Base IG 延用TW Core IG V 0.3.2 (2024-12-12)的共通交換規則；本指引再進一步定義適用於「脆弱家庭個案管理服務實作指引(以下簡稱本專案)」資料需求的Resources（類似資料表）、其中的資料項目（意即欄位）、基數（意即0..1、0..*、1..1或1..*）及資料類型（文字、日期時間、代碼等）等。</p>
 
 </div>
 

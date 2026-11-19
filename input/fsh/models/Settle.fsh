@@ -1,8 +1,8 @@
 Logical: SettleModel
 Id: SettleModel
-Title: "衛生福利部社會及家庭署脆弱家庭管理(TWVFS)傳送至安置系統資料模型"
+Title: "脆弱家庭管理（VFS）傳送至安置系統資料模型"
 Description: """
-衛生福利部社會及家庭署脆弱家庭管理(TWVFS)資料模型，此邏輯模型為定義衛生福利部社會及家庭署脆弱家庭管理傳送至安置系統情境下使用的所有資料欄位。
+脆弱家庭管理（VFS）資料模型，此邏輯模型為定義衛生福利部社會及家庭署脆弱家庭管理傳送至安置系統情境下使用的所有資料欄位。
 為了便於實作者快速理解，資料欄位會使用易於理解的命名，實作者再透過邏輯模型中的功能頁籤「Mappings」
 瞭解各資料欄位實際使用本IG的哪個Profiles的哪個資料項目（element）。亦可配合
 [視覺化邏輯模型圖]進行欄位對應。
@@ -46,7 +46,7 @@ Description: """
 
 Mapping: SettleModelToBundleVFSSettleExchange
 Id: settlemodel-to-bundle-vfs-case-exchange
-Title: "脆弱家庭管理傳送至安置系統資料模型對應Bundle TWVFS Profile"
+Title: "脆弱家庭管理傳送至安置系統資料模型對應Bundle VFS Profile"
 Source: SettleModel
 Target: "https://twssbase.sfaa.gov.tw/ig/vfs/StructureDefinition/Bundle-vfs-settle-exchange"
 * -> "Bundle" "collection交換資料包"
@@ -73,7 +73,7 @@ Target: "https://twssbase.sfaa.gov.tw/ig/vfs/StructureDefinition/Bundle-vfs-sett
 
 Mapping: SettleModelToPractitionerVFSCaseExchange
 Id: settlemodel-to-practitioner-vfs-case-exchange
-Title: "脆弱家庭管理傳送至安置系統資料模型對應Practitioner TWVFS Profile"
+Title: "脆弱家庭管理傳送至安置系統資料模型對應Practitioner VFS Profile"
 Source: SettleModel
 Target: "https://twssbase.sfaa.gov.tw/ig/vfs/StructureDefinition/Practitioner-vfs-case-exchange"
 * socialWorkerInfo -> "Practitioner" "主責社工人員資料"

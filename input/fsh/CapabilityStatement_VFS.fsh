@@ -72,12 +72,12 @@ RuleSet: VFSCommonRest
 Instance: CapabilityStatementVFSServer
 InstanceOf: CapabilityStatement
 Usage: #definition
-Title: "脆家實作指引-伺服端能力聲明"
-Description: "脆家實作指引伺服端應支援之 FHIR RESTful 功能。"
+Title: "脆弱家庭管理實作指引-伺服端能力聲明"
+Description: "脆弱家庭管理實作指引伺服端應支援之 FHIR RESTful 功能。"
 * url = "https://twssbase.sfaa.gov.tw/ig/vfs/CapabilityStatement/CapabilityStatementVFSServer"
 * version = "0.1.0"
 * name = "CapabilityStatementVFSServer"
-* title = "脆家實作指引-伺服端能力聲明"
+* title = "脆弱家庭管理實作指引-伺服端能力聲明"
 * status = #draft
 * experimental = false
 * date = "2026-11-02"
@@ -89,8 +89,8 @@ Description: "脆家實作指引伺服端應支援之 FHIR RESTful 功能。"
 * patchFormat = #application/json-patch+json
 * implementationGuide = "https://twssbase.sfaa.gov.tw/ig/vfs/ImplementationGuide/tw.gov.mohw.sfaa.vfs"
 * rest.mode = #server
-* description = "衛生福利部社會及家庭署脆弱家庭個案管理平台實作指引伺服端能力聲明。"
-* rest.documentation = "衛生福利部社會及家庭署脆弱家庭個案管理平台實作指引伺服端應以 FHIR RESTful API 提供本能力聲明所列資源，支援 JSON 格式與標準 HTTP 狀態碼，並確認新增實例的 meta.profile 符合脆弱家庭個案管理平台實作指引 Profiles。"
+* description = "脆弱家庭管理實作指引伺服端能力聲明。"
+* rest.documentation = "脆弱家庭管理實作指引伺服端應以 FHIR RESTful API 提供本能力聲明所列資源，支援 JSON 格式與標準 HTTP 狀態碼，並確認新增實例的 meta.profile 符合脆弱家庭管理實作指引 Profiles。"
 * insert VFSCommonRest
 * insert VFSResourceDefinitions
 * insert VFSNarrative(server, 伺服端)
@@ -98,12 +98,12 @@ Description: "脆家實作指引伺服端應支援之 FHIR RESTful 功能。"
 Instance: CapabilityStatementVFSClient
 InstanceOf: CapabilityStatement
 Usage: #definition
-Title: "脆家實作指引-用戶端能力聲明"
-Description: "脆家實作指引用戶端應支援之 FHIR RESTful 功能。"
+Title: "脆弱家庭管理實作指引-用戶端能力聲明"
+Description: "脆弱家庭管理實作指引用戶端應支援之 FHIR RESTful 功能。"
 * url = "https://twssbase.sfaa.gov.tw/ig/vfs/CapabilityStatement/CapabilityStatementVFSClient"
 * version = "0.1.0"
 * name = "CapabilityStatementVFSClient"
-* title = "脆家實作指引-用戶端能力聲明"
+* title = "脆弱家庭管理實作指引-用戶端能力聲明"
 * status = #draft
 * experimental = false
 * date = "2026-11-02"
@@ -115,7 +115,7 @@ Description: "脆家實作指引用戶端應支援之 FHIR RESTful 功能。"
 * patchFormat = #application/json-patch+json
 * implementationGuide = "https://twssbase.sfaa.gov.tw/ig/vfs/ImplementationGuide/tw.gov.mohw.sfaa.vfs"
 * rest.mode = #client
-* description = "衛生福利部社會及家庭署脆弱家庭個案管理平台實作指引用戶端能力聲明。"
+* description = "脆弱家庭管理實作指引用戶端能力聲明。"
 * rest.documentation = "衛生福利部社會及家庭署脆弱家庭個案管理平台實作用戶端應依本能力聲明所列資源與 Profile 使用 FHIR RESTful API。"
 * insert VFSCommonRest
 * insert VFSResourceDefinitions

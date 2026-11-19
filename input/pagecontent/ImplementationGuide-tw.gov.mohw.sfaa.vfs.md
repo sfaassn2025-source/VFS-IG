@@ -6,7 +6,7 @@
     </tr>
     <tr>
       <td colspan="4"><i>NPM package name</i>: tw.gov.mohw.sfaa.vfs</td>
-      <td><i>Computable Name</i>: <span style="font-family: monospace;">TWVFS</span></td>
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">VFS</span></td>
     </tr>
   </tbody>
 </table>

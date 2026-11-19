@@ -5,9 +5,9 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: tw.gov.mohw.sfaa.vfs
 canonical: https://twssbase.sfaa.gov.tw/ig/vfs
-name: TWVFS
-title: 衛生福利部社會及家庭署脆弱家庭管理實作指引
-description: 衛生福利部社會及家庭署脆弱家庭管理實作指引(TWVFS IG)
+name: VFS
+title: 脆弱家庭管理實作指引
+description: 脆弱家庭管理實作指引（Vulnerable Family Management Implementation Guide, VFS IG）
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
@@ -98,7 +98,7 @@ pages:
   security.md:
     title: 安全性
   ImplementationGuide-tw.gov.mohw.sfaa.vfs.md:
-    title: TW SFAA TWVFS ImplementationGuide Resource
+    title: TW SFAA VFS ImplementationGuide Resource
   vision.md:
     title: 視覺化邏輯模型
   vision-settle.md:
@@ -107,8 +107,6 @@ pages:
     title: 脆家傳送育兒津貼視覺化邏輯模型
   vision-fromcra.md:
     title: 育兒津貼回饋脆家視覺化邏輯模型
-  address-usage.md:
-    title: 地址使用說明
   history.md:
     title: 版本異動
 #

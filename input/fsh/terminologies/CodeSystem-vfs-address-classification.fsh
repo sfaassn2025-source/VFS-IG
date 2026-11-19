@@ -1,6 +1,6 @@
 CodeSystem: VFSAddressClassificationCS
 Id: vfs-address-classification-cs
-Title: "TWVFS-地址分類"
+Title: "VFS-地址分類"
 Description: "脆弱家庭個案管理平台交換使用、且無法以 HL7 v3 AddressUse 表達的地址分類代碼。"
 * ^version = "0.1.0"
 * ^status = #active
@@ -12,7 +12,7 @@ Description: "脆弱家庭個案管理平台交換使用、且無法以 HL7 v3 A
 
 ValueSet: VFSAddressClassificationVS
 Id: vfs-address-classification-vs
-Title: "TWVFS-地址分類值集"
+Title: "VFS-地址分類值集"
 Description: "脆弱家庭個案管理平台交換使用的地址分類值集；優先沿用 HL7 v3 AddressUse，並補充戶籍地址及公文送達地址代碼。"
 * ^version = "0.1.0"
 * ^status = #active

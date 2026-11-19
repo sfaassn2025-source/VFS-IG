@@ -2,7 +2,7 @@ RuleSet: VFSNarrative(mode, role)
 * text.status = #generated
 * text.div = """
 <div xmlns="http://www.w3.org/1999/xhtml">
-  <h2>衛生福利部社會及家庭署脆弱家庭個案管理平台實作指引-{role}</h2>
+  <h2>脆弱家庭管理實作指引-{role}</h2>
   <ul>
     <li>實作指引版本：0.1.0</li>
     <li>FHIR版本：4.0.1</li>
@@ -11,7 +11,7 @@ RuleSet: VFSNarrative(mode, role)
   </ul>
   <h3>建議應該（SHOULD）實作的IGs</h3>
   <ul>
-    <li><a href="index.html">衛生福利部社會及家庭署脆弱家庭個案管理平台實作指引</a></li>
+    <li><a href="index.html">脆弱家庭管理實作指引</a></li>
     <li><a href="https://twssbase.sfaa.gov.tw/ig/base/">臺灣社政領域基礎實作指引（TWSS Base IG）</a></li>
   </ul>
   <h2>{mode} FHIR RESTful功能要求</h2>

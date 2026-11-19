@@ -11,10 +11,10 @@ Usage: #example
   </blockquote>
   <p><b>姓名</b>：王小明；<b>性別</b>：男性 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://hl7.org/fhir/R4/codesystem-administrative-gender.html">AdministrativeGender</a>#male）</span>；<b>出生日期</b>：2015-06-01</p>
   <p><b>聯絡電話</b>：0912345678；<b>聯絡方式</b>：Phone <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://hl7.org/fhir/R4/valueset-contact-point-system.html">ContactPointSystem</a>#phone）</span></p>
-  <p><b>戶籍地址</b>：11558臺北市南港區新光里忠孝東路六段488號 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="CodeSystem-vfs-address-classification-cs.html">TWVFS 地址分類</a>#registered）</span></p>
+  <p><b>戶籍地址</b>：11558臺北市南港區新光里忠孝東路六段488號 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="CodeSystem-vfs-address-classification-cs.html">VFS 地址分類</a>#registered）</span></p>
   <p><b>居住地址</b>：11557臺北市南港區重陽路 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://hl7.org/fhir/R4/v3/AddressUse/cs.html">v3 AddressUse</a>#H）</span></p>
   <p><b>通訊地址</b>：10488臺北市中山區南京東路二段1號 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://hl7.org/fhir/R4/v3/AddressUse/cs.html">v3 AddressUse</a>#PST）</span></p>
-  <p><b>公文送達地址</b>：11070臺北市信義區松仁路100號 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="CodeSystem-vfs-address-classification-cs.html">TWVFS 地址分類</a>#official-service）</span></p>
+  <p><b>公文送達地址</b>：11070臺北市信義區松仁路100號 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="CodeSystem-vfs-address-classification-cs.html">VFS 地址分類</a>#official-service）</span></p>
   <p><b>國籍</b>：臺灣 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://terminology.hl7.org/CodeSystem-ISO3166Part1.html">ISO3166Part1</a>#TW）</span>；<b>族群身分</b>：一般 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://twssbase.sfaa.gov.tw/ig/base/CodeSystem-twss-ethnic-group.html">TWSS 族群身分代碼</a>#A）</span></p>
 </div>
 """

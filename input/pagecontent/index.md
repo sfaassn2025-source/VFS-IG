@@ -159,3 +159,48 @@
 </div>
 
 ### 作者與貢獻者
+
+<div class="table-responsive">
+<table class="table table-striped table-bordered" style="table-layout: fixed; width: 100%;">
+  <colgroup>
+    <col style="width: 12%;" />
+    <col style="width: 24%;" />
+    <col style="width: 16%;" />
+    <col style="width: 48%;" />
+  </colgroup>
+  <thead>
+    <tr>
+      <th>角色</th>
+      <th>機構</th>
+      <th>姓名</th>
+      <th>所屬單位及職稱</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>作者</td>
+      <td>詠鋐智能股份有限公司</td>
+      <td>林伃瑤</td>
+      <td>國立臺北護理健康大學－健康事業管理系</td>
+    </tr>
+    <tr>
+      <td>貢獻者</td>
+      <td>衛生福利部社會及家庭署</td>
+      <td>陳羿吟</td>
+      <td>家庭支持組／約聘副研究員</td>
+    </tr>
+    <tr>
+      <td>貢獻者</td>
+      <td>采聲科技股份有限公司</td>
+      <td>張宏榮</td>
+      <td>軟體工程師</td>
+    </tr>
+    <tr>
+      <td>貢獻者</td>
+      <td>詠鋐智能股份有限公司</td>
+      <td>本案工作團隊</td>
+      <td>—</td>
+    </tr>
+  </tbody>
+</table>
+</div>

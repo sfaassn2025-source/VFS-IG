@@ -5,7 +5,7 @@
 ### 專案介紹
 <div  style="padding-left: 10px;"> 
 
-<p>脆弱家庭個案管理服務實作指引(Vulnerable Families Case Management Service Base IG, VFS IG)採用HL7® FHIR® standard（Fast Healthcare Interoperability Resources）IG建置方法，在FHIR R4.0.1之標準基礎上，繼承<a href="https://twssbase.sfaa.gov.tw/ig/base/">臺灣社政領域基礎實作指引（TWSS Base IG）</a>，並透過 TWSS Base IG 延用TW Core IG V 0.3.2 (2024-12-12)的共通交換規則；本指引再進一步定義適用於「脆弱家庭個案管理服務實作指引(以下簡稱本專案)」資料需求的Resources（類似資料表）、其中的資料項目（意即欄位）、基數（意即0..1、0..*、1..1或1..*）及資料類型（文字、日期時間、代碼等）等。</p>
+<p>脆弱家庭管理實作指引（Vulnerable Family Management Implementation Guide, VFS IG）採用HL7® FHIR® standard（Fast Healthcare Interoperability Resources）IG建置方法，在FHIR R4.0.1之標準基礎上，繼承<a href="https://twssbase.sfaa.gov.tw/ig/base/">臺灣社政領域基礎實作指引（TWSS Base IG）</a>，並透過 TWSS Base IG 延用TW Core IG V 0.3.2 (2024-12-12)的共通交換規則；本指引再進一步定義適用於「脆弱家庭管理實作指引（以下簡稱本專案）」資料需求的Resources（類似資料表）、其中的資料項目（意即欄位）、基數（意即0..1、0..*、1..1或1..*）及資料類型（文字、日期時間、代碼等）等。</p>
 
 </div>
 
@@ -32,11 +32,11 @@
 <div style="justify-content: center;display: flex;"><img class="figure-img img-responsive img-rounded center-block" src="usecase-settle.png" alt="脆弱家庭個案管理平台與安置系統使用情境圖" style="width: 100%; max-width: 613px; height: auto;" /></div>
 <div style="clear:both;"></div>
 
-<h5>傳送行方不明的個案資訊給未滿2歲兒童育兒津貼資訊系統</h5>
+<h5>傳送行方不明的個案資訊給未滿兩歲兒童育兒津貼資訊系統</h5>
 <ol>
-	<li>由脆家平台將行方不明個案資訊(含撤尋)傳送至未滿2歲兒童育兒津貼資訊系統。</li>
-	<li>經未滿2歲兒童育兒津貼資訊系統查調後，由未滿2歲兒童育兒津貼資訊系統停止發放脆家平台行方不明個案已申請的育兒津貼，並重新發放撤尋的行方不明個案申請之育兒津貼。</li>
-	<li>未滿2歲兒童育兒津貼資訊系統將定期回饋行方不明的兒童或其兄弟姐妹已申請育兒津貼的申請資料予脆家平台。</li>
+	<li>由脆家平台將行方不明個案資訊(含撤尋)傳送至未滿兩歲兒童育兒津貼資訊系統。</li>
+	<li>經未滿兩歲兒童育兒津貼資訊系統查調後，由未滿兩歲兒童育兒津貼資訊系統停止發放脆家平台行方不明個案已申請的育兒津貼，並重新發放撤尋的行方不明個案申請之育兒津貼。</li>
+	<li>未滿兩歲兒童育兒津貼資訊系統將定期回饋行方不明的兒童或其兄弟姐妹已申請育兒津貼的申請資料予脆家平台。</li>
 </ol>
 
 <div style="justify-content: center;display: flex;"><img class="figure-img img-responsive img-rounded center-block" src="usecase-cra.png" alt="脆弱家庭個案管理平台與育兒津貼系統使用情境圖" style="width: 100%; max-width: 618px; height: auto;" /></div>
@@ -56,11 +56,11 @@
 <div style="justify-content: center;display: flex;"><img class="figure-img img-responsive img-rounded center-block" src="sequence-settle.png" alt="脆弱家庭個案管理平台與安置系統循序圖" style="width: 100%; max-width: 477px; height: auto;" /></div>
 <div style="clear:both;"></div>
 
-<h5>傳送行方不明的個案資訊給未滿2歲兒童育兒津貼資訊系統</h5>
+<h5>傳送行方不明的個案資訊給未滿兩歲兒童育兒津貼資訊系統</h5>
 <ol>
-	<li>脆家平台傳送行方不明個案資訊(含撤尋)至未滿2歲兒童育兒津貼資訊系統。</li>
-	<li>若傳送成功，未滿2歲兒童育兒津貼資訊系統回傳傳送成功訊息；若傳送失敗，回傳傳送失敗訊息。</li>
-	<li>未滿2歲兒童育兒津貼資訊系統定期回饋行方不明的兒童或其兄弟姐妹已申請育兒津貼的申請資料。</li>
+	<li>脆家平台傳送行方不明個案資訊(含撤尋)至未滿兩歲兒童育兒津貼資訊系統。</li>
+	<li>若傳送成功，未滿兩歲兒童育兒津貼資訊系統回傳傳送成功訊息；若傳送失敗，回傳傳送失敗訊息。</li>
+	<li>未滿兩歲兒童育兒津貼資訊系統定期回饋行方不明的兒童或其兄弟姐妹已申請育兒津貼的申請資料。</li>
 	<li>若取得成功，脆家平台回傳傳送成功訊息；若取得失敗，回傳傳送失敗訊息。</li>
 </ol>
 
@@ -132,7 +132,7 @@
 	<li><strong><a href="artifacts.html">規範文件</a></strong>
 	<ul>
 		<li><strong><a href="capabilitystatements.html">能力聲明</a>
-			</strong>：應用本IG於建置業務目的使用的FHIR Server時，該FHIR Server必須及建議應該支援的資料存取功能。
+			</strong>：應用本IG建置業務資料交換時，用戶端與伺服端可能可以（MAY）支援的 FHIR RESTful 功能。
 		</li>
 		<li><strong><a href="searchparameters.html">查詢參數</a>
 			</strong>：本IG使用的FHIR R4原生查詢參數及各 Resource 的查詢說明。
